@@ -1,4 +1,4 @@
-<div align="center">
+<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/97d89a91-aed0-4ebf-adea-ab6d79cc8e5a" /><div align="center">
 
 # 🏦 SAR Narrative Generator with Full Audit Trail
 
@@ -40,7 +40,7 @@
 
 ### 🤖 AI & Vector Store
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="https://github.com/ggerganov/llama.cpp/raw/master/media/llama-logo.png" alt="Llama" width="48" height="48" />
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/049/809/118/small/llama-head-icon-in-line-style-on-white-background-vector.jpg" alt="Llama" width="48" height="48" />
   <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/langchain-color.png" alt="LangChain" width="48" height="48" />
   <img src="https://miro.medium.com/v2/resize:fit:536/format:webp/1*2ofNU5JgKwcqT_wORFEK_w.png" alt="ChromaDB" width="48" height="48" />
 </div>
