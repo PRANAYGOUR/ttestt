@@ -1,7 +1,7 @@
 
 # 🏦 SAR Narrative Generator with Full Audit Trail
 
-<p align="center">Enterprise AML Compliance Platform for Barclays Hackathon
+<p align="center"><strong></strong>Enterprise AML Compliance Platform for Barclays Hackathon.</strong>
 </p>
 
 
