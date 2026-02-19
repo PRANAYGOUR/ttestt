@@ -82,38 +82,77 @@ This platform addresses the critical need for **transparency** and **auditabilit
 
 <div align="center">
 
-### Frontend Framework & Core
-<img src="https://skillicons.dev/icons?i=react,typescript,vite" alt="Frontend" />
-
-### Styling & UI
-<img src="https://skillicons.dev/icons?i=tailwind,css,materialui" alt="Styling" />
-
-### State Management & Routing
-<img src="https://skillicons.dev/icons?i=react" alt="State Management" />
+### 🎯 Full-Stack Application
+<img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind,react" alt="Frontend Stack" />
 <br />
-<sub>React Context API • React Router v7 • React Hook Form</sub>
+<sub><strong>Next.js • TypeScript • Tailwind CSS • React</strong></sub>
+<br />
+<sub>Analyst UI, approvals, audit views, API routes</sub>
 
-### Data Visualization
-<sub>Recharts • Lucide React Icons</sub>
+### ⚙️ Orchestration & Workflow
+<img src="https://skillicons.dev/icons?i=docker" alt="Orchestration" />
+<br />
+<sub><strong>n8n (Workflow Automation)</strong></sub>
+<br />
+<sub>Ingestion, feature engineering, rules, scoring, AI calls, audit logging</sub>
 
-### Development Tools
-<img src="https://skillicons.dev/icons?i=git,github,npm" alt="Dev Tools" />
+### 🤖 AI & Vector Store
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+  <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/langchain-color.png" alt="LangChain" width="48" height="48" />
+  <img src="https://miro.medium.com/v2/resize:fit:536/format:webp/1*2ofNU5JgKwcqT_wORFEK_w.png" alt="ChromaDB" width="48" height="48" />
+</div>
+<br />
+<sub><strong>LLM (Llama/Mistral/GPT) • LangChain • ChromaDB</strong></sub>
+<br />
+<sub>Controlled narrative generation from templates & guidelines (RAG architecture)</sub>
+
+### 🗄️ Database & ORM
+<img src="https://skillicons.dev/icons?i=postgresql,prisma" alt="Database" />
+<br />
+<sub><strong>PostgreSQL • Prisma ORM</strong></sub>
+<br />
+<sub>Case data, SAR versions, immutable audit logs</sub>
+
+### 🔐 Access Control
+<img src="https://skillicons.dev/icons?i=react" alt="RBAC" />
+<br />
+<sub><strong>RBAC (Role-Based Access Control)</strong></sub>
+<br />
+<sub>Analyst • Supervisor • Auditor roles inside Next.js</sub>
+
+### 🚀 DevOps & Deployment
+<img src="https://skillicons.dev/icons?i=docker,git,github,npm" alt="DevOps" />
+<br />
+<sub><strong>Docker • Docker Compose • Git • GitHub • npm</strong></sub>
+<br />
+<sub>Local development + cloud/on-prem ready containerization</sub>
+
+### 📊 Data Visualization & UI Libraries
+<img src="https://skillicons.dev/icons?i=materialui,css" alt="UI Libraries" />
+<br />
+<sub><strong>Recharts • Material UI • Lucide Icons • Motion</strong></sub>
+<br />
+<sub>Interactive charts, enterprise components, smooth animations</sub>
 
 </div>
 
-### 📦 Core Dependencies
+---
 
-```json
-{
-  "react": "^18.3.1",
-  "react-router": "^7.13.0",
-  "recharts": "^2.15.2",
-  "tailwindcss": "^4.1.12",
-  "@mui/material": "^7.3.5",
-  "lucide-react": "^0.487.0",
-  "motion": "^12.23.24",
-  "sonner": "^2.0.3"
-}
+## 📐 Architecture Overview
+
+```mermaid
+graph TB
+    A[Next.js Frontend] --> B[API Routes]
+    B --> C[n8n Orchestration]
+    C --> D[Rule Engine]
+    C --> E[LangChain + LLM]
+    E --> F[ChromaDB Vector Store]
+    C --> G[PostgreSQL + Prisma]
+    G --> H[Audit Trail]
+    A --> I[RBAC Layer]
+    I --> J[Analyst View]
+    I --> K[Supervisor View]
+    I --> L[Auditor View]
 ```
 
 ---
@@ -202,16 +241,16 @@ The platform implements a **three-tier role-based access control** system:
 
 ```
 Analyst Login:
-- Username: analyst@barclays.com
-- Password: (any)
+- Employee ID: ex123
+- Password: analyst123
 
 Supervisor Login:
-- Username: supervisor@barclays.com
-- Password: (any)
+- Employee ID: ex456
+- Password: supervisor123
 
 Auditor Login:
-- Username: auditor@barclays.com
-- Password: (any)
+- Employee ID: ex789
+- Password: auditor123
 ```
 
 ### 🏗️ Build for Production
