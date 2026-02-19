@@ -9,7 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge" alt="Status" />
   <img src="https://img.shields.io/badge/Built%20For-Barclays%20Hackathon-1E3A8A?style=for-the-badge" alt="Barclays" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/MIT-Licence-green?style=for-the-badge" alt="License" />
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@
 
 ### 🤖 AI & Vector Store
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBumjwpO99hwXDn0DdauVBxa3iQK9vlatSwQ&s">
+  <img src="https://github.com/ggerganov/llama.cpp/raw/master/media/llama-logo.png" alt="Llama" width="48" height="48" />
   <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/langchain-color.png" alt="LangChain" width="48" height="48" />
   <img src="https://miro.medium.com/v2/resize:fit:536/format:webp/1*2ofNU5JgKwcqT_wORFEK_w.png" alt="ChromaDB" width="48" height="48" />
 </div>
