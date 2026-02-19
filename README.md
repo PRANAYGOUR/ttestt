@@ -1,8 +1,10 @@
-<div align="center">
+
+ <div align="center">
 
 # 🏦 SAR Narrative Generator with Full Audit Trail
+  ## AML Compliance Platform UI Design
+   This is a code bundle for AML Compliance Platform UI Design. The original project is available at https://www.figma.com/design/RsILi2ijdoGK4zw328S167/AML-Compliance-Platform-UI-Design.
 
-### Enterprise AML Compliance Platform for Barclays Hackathon
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge" alt="Status" />
@@ -32,8 +34,6 @@
 - [Design System](#-design-system)
 - [Security & Compliance](#-security--compliance)
 - [Future Enhancements](#-future-enhancements)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -78,56 +78,54 @@ This platform addresses the critical need for **transparency** and **auditabilit
 
 ---
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 <div align="center">
 
-### 🎯 Full-Stack Application
+###  Full-Stack Application
 <img src="https://skillicons.dev/icons?i=nextjs,typescript,tailwind,react" alt="Frontend Stack" />
 <br />
 <sub><strong>Next.js • TypeScript • Tailwind CSS • React</strong></sub>
 <br />
 <sub>Analyst UI, approvals, audit views, API routes</sub>
 
-### ⚙️ Orchestration & Workflow
+###  Orchestration & Workflow
 <img src="https://skillicons.dev/icons?i=docker" alt="Orchestration" />
 <br />
 <sub><strong>n8n (Workflow Automation)</strong></sub>
 <br />
 <sub>Ingestion, feature engineering, rules, scoring, AI calls, audit logging</sub>
 
-### 🤖 AI & Vector Store
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/langchain-color.png" alt="LangChain" width="48" height="48" />
-  <img src="https://miro.medium.com/v2/resize:fit:536/format:webp/1*2ofNU5JgKwcqT_wORFEK_w.png" alt="ChromaDB" width="48" height="48" />
-</div>
+###  AI & Vector Store
+<img src="https://cdn.simpleicons.org/chromadb" width="60" alt="ChromaDB Logo"/>
 <br />
 <sub><strong>LLM (Llama/Mistral/GPT) • LangChain • ChromaDB</strong></sub>
 <br />
+<img src="https://cdn.simpleicons.org/langchain" width="60" alt="LangChain Logo"/>
 <sub>Controlled narrative generation from templates & guidelines (RAG architecture)</sub>
 
-### 🗄️ Database & ORM
+###  Database & ORM
 <img src="https://skillicons.dev/icons?i=postgresql,prisma" alt="Database" />
 <br />
 <sub><strong>PostgreSQL • Prisma ORM</strong></sub>
 <br />
 <sub>Case data, SAR versions, immutable audit logs</sub>
 
-### 🔐 Access Control
+###  Access Control
 <img src="https://skillicons.dev/icons?i=react" alt="RBAC" />
 <br />
 <sub><strong>RBAC (Role-Based Access Control)</strong></sub>
 <br />
 <sub>Analyst • Supervisor • Auditor roles inside Next.js</sub>
 
-### 🚀 DevOps & Deployment
+###  DevOps & Deployment
 <img src="https://skillicons.dev/icons?i=docker,git,github,npm" alt="DevOps" />
 <br />
 <sub><strong>Docker • Docker Compose • Git • GitHub • npm</strong></sub>
 <br />
 <sub>Local development + cloud/on-prem ready containerization</sub>
 
-### 📊 Data Visualization & UI Libraries
+###  Data Visualization & UI Libraries
 <img src="https://skillicons.dev/icons?i=materialui,css" alt="UI Libraries" />
 <br />
 <sub><strong>Recharts • Material UI • Lucide Icons • Motion</strong></sub>
@@ -135,24 +133,21 @@ This platform addresses the critical need for **transparency** and **auditabilit
 <sub>Interactive charts, enterprise components, smooth animations</sub>
 
 </div>
+</div>
 
----
+###  Core Dependencies
 
-## 📐 Architecture Overview
-
-```mermaid
-graph TB
-    A[Next.js Frontend] --> B[API Routes]
-    B --> C[n8n Orchestration]
-    C --> D[Rule Engine]
-    C --> E[LangChain + LLM]
-    E --> F[ChromaDB Vector Store]
-    C --> G[PostgreSQL + Prisma]
-    G --> H[Audit Trail]
-    A --> I[RBAC Layer]
-    I --> J[Analyst View]
-    I --> K[Supervisor View]
-    I --> L[Auditor View]
+```json
+{
+  "react": "^18.3.1",
+  "react-router": "^7.13.0",
+  "recharts": "^2.15.2",
+  "tailwindcss": "^4.1.12",
+  "@mui/material": "^7.3.5",
+  "lucide-react": "^0.487.0",
+  "motion": "^12.23.24",
+  "sonner": "^2.0.3"
+}
 ```
 
 ---
@@ -162,16 +157,14 @@ graph TB
 <div align="center">
 
 ### Dashboard Overview
-*Real-time metrics, active cases, and quick actions*
+<img width="999" height="550" alt="Screenshot 2026-02-18 202242" src="https://github.com/user-attachments/assets/d031cf25-f97d-43dc-ac83-79f27d43782c" />
 
 ### Generate SAR Interface
-*AI-assisted narrative creation with rule engine validation*
-
-### Audit Trail
-*Complete transparency with timestamp tracking*
+<img width="999" height="550" alt="Screenshot 2026-02-18 202909" src="https://github.com/user-attachments/assets/979ddbca-6999-4091-b01b-71f03012e067" />
 
 ### Risk Analytics
-*Visual insights into suspicious activity patterns*
+<img width="999" height="550" alt="Screenshot 2026-02-18 203014" src="https://github.com/user-attachments/assets/c19786a8-e948-4c95-9cec-dd0666386168" />
+
 
 </div>
 
@@ -241,16 +234,16 @@ The platform implements a **three-tier role-based access control** system:
 
 ```
 Analyst Login:
-- Employee ID: ex123
-- Password: analyst123
+- Username: analyst@barclays.com
+- Password: (any)
 
 Supervisor Login:
-- Employee ID: ex456
-- Password: supervisor123
+- Username: supervisor@barclays.com
+- Password: (any)
 
 Auditor Login:
-- Employee ID: ex789
-- Password: auditor123
+- Username: auditor@barclays.com
+- Password: (any)
 ```
 
 ### 🏗️ Build for Production
@@ -361,8 +354,6 @@ The platform uses a **professional enterprise banking theme** with risk-based co
 
 ### Production Considerations
 
-⚠️ **This is a hackathon prototype.** For production deployment:
-
 - Implement backend API with proper authentication (OAuth 2.0 / SAML)
 - Use encrypted database for sensitive data
 - Add rate limiting and DDoS protection
@@ -399,65 +390,6 @@ The platform uses a **professional enterprise banking theme** with risk-based co
 
 ---
 
-## 🤝 Contributing
-
-This is a hackathon prototype, but contributions are welcome!
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Code Style
-
-- Follow existing TypeScript conventions
-- Use functional components and hooks
-- Keep components under 300 lines
-- Add comments for complex logic
-- Use meaningful variable names
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-Built with ❤️ for the **Barclays Hackathon 2026**
-
-### Contact
-
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Name](https://linkedin.com/in/yourprofile)
-
----
-
-## 🙏 Acknowledgments
-
-- **Barclays** for hosting the hackathon and inspiring this solution
-- **Shadcn/ui** for the excellent component library
-- **Recharts** for powerful data visualization
-- **Lucide** for beautiful iconography
-- **Tailwind CSS** for rapid styling
-- **React Router** for robust navigation
-
----
-
-<div align="center">
-
-### ⭐ Star this repository if you find it useful!
-
-**Made with 🏦 for enterprise AML compliance**
-
-<p>
-  <sub>Disclaimer: This is a prototype for demonstration purposes. Not intended for production use without proper security hardening and regulatory compliance verification.</sub>
-</p>
-
 </div>
+
+  
