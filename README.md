@@ -1,4 +1,3 @@
-<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/97d89a91-aed0-4ebf-adea-ab6d79cc8e5a" /><div align="center">
 
 # 🏦 SAR Narrative Generator with Full Audit Trail
 
